@@ -1,0 +1,6 @@
+{
+  "name": "BiblioEST - Bibliothèque Universitaire",
+  "description": "Système intelligent de consultation, réservation et gestion des emprunts de la bibliothèque de l'EST.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

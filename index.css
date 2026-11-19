@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Refined Curatorial / Academic Palette */
+    --paper-bg: #FBF9F5;
+    --paper-card: #FFFFFF;
+    --paper-muted: #F5F2EB;
+    --paper-subtle: #ECE7DE;
+    --border-hairline: rgba(28, 25, 23, 0.08);
+    --border-strong: rgba(28, 25, 23, 0.16);
+
+    /* Primary Ink & Text */
+    --ink-primary: #1C1917;
+    --ink-secondary: #44403C;
+    --ink-muted: #78716C;
+
+    /* Academic Accent: Midnight Oxford Navy */
+    --accent-navy: #1E3A5F;
+    --accent-navy-hover: #152B47;
+    --accent-navy-subtle: rgba(30, 58, 95, 0.08);
+
+    /* Delay Spectrum (Shared by Students & Librarians) */
+    --status-ontime-bg: #ECFDF5;
+    --status-ontime-text: #065F46;
+    --status-ontime-border: #A7F3D0;
+
+    --status-yellow-bg: #FEF9C3;
+    --status-yellow-text: #854D0E;
+    --status-yellow-border: #FDE047;
+
+    --status-orange-bg: #FFEDD5;
+    --status-orange-text: #9A3412;
+    --status-orange-border: #FDBA74;
+
+    --status-red-bg: #FEE2E2;
+    --status-red-text: #991B1B;
+    --status-red-border: #FCA5A5;
+  }
+
+  body {
+    font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-optical-sizing: auto;
+    background-color: var(--paper-bg);
+    color: var(--ink-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Subtle curatorial panel and navigation */
+.editorial-panel {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-hairline);
+  box-shadow: 0 1px 3px 0 rgba(28, 25, 23, 0.04), 0 1px 2px -1px rgba(28, 25, 23, 0.02);
+}
+
+.editorial-nav {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(28, 25, 23, 0.07);
+  box-shadow: 0 2px 20px -2px rgba(28, 25, 23, 0.03);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 113, 108, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 113, 108, 0.45);
+}
